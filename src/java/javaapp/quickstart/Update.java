@@ -26,6 +26,7 @@ public class Update {
             MongoCollection<Document> gradesCollection = sampleTrainingDB.getCollection("grades");
 
             // update one document
+
             Bson filter = eq("student_id", 10000);
             Bson updateOperation = set("comment", "You should learn MongoDB!");
             UpdateResult updateResult = gradesCollection.updateOne(filter, updateOperation);
@@ -67,6 +68,7 @@ public class Update {
             Document newVersion = gradesCollection.findOneAndUpdate(filter, updates, optionAfter);
             System.out.println("\n=> FindOneAndUpdate operation. But we can also ask for the new version of the doc:");
             System.out.println(newVersion.toJson(prettyPrint));
+
         }
     }
 }

@@ -3,14 +3,14 @@
 <project  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" >
     <dependencies>
         <dependency>
-            <groupId>org.cmql</groupId>
-            <artifactId>cmql-j</artifactId>
-            <version>0.1.0-SNAPSHOT</version>
+            <groupId>org.squery</groupId>
+            <artifactId>squery-mongo-j</artifactId>
+            <version>0.2.0-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>org.cmql</groupId>
-            <artifactId>cmql-app-clj</artifactId>
-            <version>0.1.0-SNAPSHOT</version>
+            <groupId>org.squery</groupId>
+            <artifactId>squery-mongo-app-clj</artifactId>
+            <version>0.2.0-SNAPSHOT</version>
         </dependency>
         <!--dependency>
             <groupId>org.mongodb</groupId>
@@ -19,9 +19,9 @@
         </dependency-->
     </dependencies>
     <version>0.0</version>
-    <groupId>org.cmql</groupId>
-    <name>cmql-app-j</name>
-    <artifactId>cmql-app-j</artifactId>
+    <groupId>org.squery</groupId>
+    <name>squery-mongo-app-j</name>
+    <artifactId>squery-mongo-app-j</artifactId>
     <!-- We need java8+ -->
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>

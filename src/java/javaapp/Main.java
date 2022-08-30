@@ -8,7 +8,7 @@ import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
 
 //use the clojure wrapper in the dependency code(clojureapp),that creates a Java class,
-import static cmql_app_clj.interop.Quickstart_api.*;
+import static squery_mongo_app_clj.interop.Quickstart_api.*;
 
 //our java wrapper over the clojure code in the maven project
 import static javaapp.Queries.*;
@@ -143,6 +143,6 @@ public class Main
 
     //-----------------------Loading any namespace in the clojureapp dependency-----------------------------------------
 
-    require.invoke(Clojure.read("cmql-app-clj.cmql.commands.read-write.t6aggregation"));
+    require.invoke(Clojure.read("squery-mongo-app-clj.squery.commands.read-write.t6aggregation"));
   }
 }

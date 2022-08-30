@@ -1,16 +1,18 @@
 (ns queries.agreegate-framework
   (:refer-clojure :only [])
-  (:use cmql-core.operators.operators
-        cmql-core.operators.stages
-        cmql-core.operators.options
-        cmql-j.driver.cursor
-        cmql-j.driver.document
-        cmql-j.driver.settings
-        cmql-j.driver.transactions
-        cmql-j.driver.utils
-        cmql-j.arguments
-        cmql-j.commands
-        cmql-j.macros
+  (:use squery-mongo-core.operators.operators
+        squery-mongo-core.operators.qoperators
+        squery-mongo-core.operators.uoperators
+        squery-mongo-core.operators.stages
+        squery-mongo-core.operators.options
+        squery-mongo.driver.cursor
+        squery-mongo.driver.document
+        squery-mongo.driver.settings
+        squery-mongo.driver.transactions
+        squery-mongo.driver.utils
+        squery-mongo.arguments
+        squery-mongo.commands
+        squery-mongo.macros
         clojure.pprint)
   (:refer-clojure)
   (:require [clojure.core :as c])
